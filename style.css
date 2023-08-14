@@ -304,8 +304,15 @@ main .container {
     color: var(--Very-Dark-Violet);
     white-space: nowrap;
 }
-.shortlink > p {
+.shortlink > a {
     color: var(--Cyan);
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+.shortlink > a:hover {
+    text-decoration:underline;
+    transform: scale(1.05);
 }
 
 .copy-btn{
