@@ -58,13 +58,14 @@ function render(){
     let html = "";
     
     for(let i = shortlinks.length -1 ; i >= 0 ; i--){
+      let shorterlink = shortlinks[i].full_short_link;
         html += `
                 <div class="container">
                     <p class="rowlink">
                     ${shortlinks[i].original_link.substring(0,29)}...
                     </p>
                     <div class="shortlink">
-                    <a href="${shortlinks[i].full_short_link}" target="_blank">${shortlinks[i].full_short_link}</a>
+                    <a href="${shorterlink}" target="_blank">${shorterlink}</a>
                     <button class="btn copy-btn" onclick="copyLink(${i},this)">Copy </button>
                     </div>
                 </div>
