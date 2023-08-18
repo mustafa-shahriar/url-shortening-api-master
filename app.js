@@ -64,7 +64,7 @@ function render(){
                     ${shortlinks[i].original_link.substring(0,29)}...
                     </p>
                     <div class="shortlink">
-                    <a href="${shortlinks[i].full_short_link}" target="_blank">${shortlinks[i].full_share_link}</a>
+                    <a href="${shortlinks[i].full_short_link}" target="_blank">${shortlinks[i].full_short_link}</a>
                     <button class="btn copy-btn" onclick="copyLink(${i},this)">Copy </button>
                     </div>
                 </div>
